@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <title>Decodificador</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,15 +18,17 @@
     </header>
 
     <main>
-        <div class="campo-de-texto">
-            <label for="texto">Digite o texto</label>
-            <textarea cols="90" rows="20" id="texto"></textarea>
-        </div>
+        
+        <section class="entrada-dados">
+            <div class="campo-de-texto">
+                <textarea cols="40" rows="10" id="texto" placeholder="Digite seu texto"></textarea>
+            </div>
 
-        <div class="botoes">
-            <input class="botao-criptografar" type="submit" value="Criptografar">
-            <input class="botao-descriptografar" type="submit" value="Descriptografar">
-        </div>
+            <div class="botoes">
+                <input class="botao-criptografar" type="submit" value="Criptografar">
+                <input class="botao-descriptografar" type="submit" value="Descriptografar">
+            </div>
+        </section>
     </main>
 
     <footer>

@@ -2,6 +2,7 @@ body {
     background-color: #F3F5FC;
 }
 
+/*Header*/
 header img {
     position: absolute;
     display: inline-block;
@@ -9,11 +10,18 @@ header img {
     top: 25px;
 }
 
-.campo-de-texto {
+/*Main*/
+
+.entrada-dados {
     position: absolute;
-    width: 680px;
-    top: 168px;
-    left: 240px;
+    top: 130px;
+    left: 150px;
+}
+
+.campo-de-texto textarea{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    color: #0A3871;
 }
 
 .campo-de-texto label {
@@ -25,18 +33,15 @@ header img {
 }
 
 .botoes {
-    position: absolute;
-    top: 550px;
-    left: 240px;
-    width: 680px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .botao-criptografar, .botao-descriptografar{
     display: flex;
     width: 328px;
     padding: 20px 40px;
+    margin-top: 50px;
     justify-content: space-around;
     border-radius: 24px;
     cursor: pointer;

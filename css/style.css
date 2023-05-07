@@ -22,14 +22,12 @@ header img {
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     color: #0A3871;
-}
-
-.campo-de-texto label {
-    display: block;
+    padding: 15px;
 }
 
 .campo-de-texto textarea {
     border: none;
+    width: 680px;
 }
 
 .botoes {
@@ -39,7 +37,7 @@ header img {
 
 .botao-criptografar, .botao-descriptografar{
     display: flex;
-    width: 328px;
+    width: 320px;
     padding: 20px 40px;
     margin-top: 50px;
     justify-content: space-around;

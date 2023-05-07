@@ -8,3 +8,18 @@ header img {
     left: 44px;
     top: 25px;
 }
+
+.campo-de-texto {
+    position: absolute;
+    width: 680px;
+    top: 168px;
+    left: 240px;
+}
+
+.campo-de-texto label {
+    display: block;
+}
+
+.campo-de-texto textarea {
+    border: none;
+}

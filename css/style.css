@@ -10,7 +10,15 @@ header img {
 }
 
 /*Main*/
-.entrada-dados {
+
+/*Area de entrada de dados*/
+.entrada-saida-dados .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrada-dados .container{
     display: flex;
     height: 650px;
     flex-direction: column;
@@ -18,14 +26,14 @@ header img {
     justify-content: center;
 }
 
-.entrada-dados-campo textarea{
+.entrada-texto{
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     color: #0A3871;
     padding: 15px;
 }
 
-.entrada-dados-campo textarea {
+.entrada-texto {
     border: none;
     width: 680px;
 }
@@ -62,4 +70,37 @@ header img {
 }
 .botao-descriptografar:hover {
     background-color: #9fa6af;
+}
+
+/*Area que mostra o texto criptografado/descriptografado*/
+
+.saida-dados-campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.campo-imagem {
+    width: 250px;
+}
+.campo-texto {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+}
+.campo-texto h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+.campo-texto p{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 18px;
 }

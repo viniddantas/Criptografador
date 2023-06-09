@@ -17,17 +17,31 @@
         <img src="assets/img/Logo.png" alt="Logo da marca Alura">
     </header>
 
-    <main>
+    <main class="entrada-saida-dados">
+        <div class="container">
         <section class="entrada-dados">
-            <div class="entrada-dados-campo">
-                <textarea cols="40" rows="10" id="texto" placeholder="Digite seu texto"></textarea>
-            </div>
+            <div class="container">
+                <div class="entrada-dados-campo">
+                    <textarea class="entrada-texto" cols="40" rows="10" id="texto" placeholder="Digite seu texto"></textarea>
+                </div>
 
-            <div class="entrada-dados-botoes">
-                <input class="botao-criptografar" type="submit" value="Criptografar">
-                <input class="botao-descriptografar" type="submit" value="Descriptografar">
+                <div class="entrada-dados-botoes">
+                    <input class="botao-criptografar" type="submit" value="Criptografar">
+                    <input class="botao-descriptografar" type="submit" value="Descriptografar">
+                </div>
             </div>
         </section>
+
+        <section class="saida-dados">
+            <div class="saida-dados-campo">
+                <img class="campo-imagem" src="assets/img/Resultado.png" alt="">
+                <div class="campo-texto">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+        </div>
     </main>
 
     <footer>

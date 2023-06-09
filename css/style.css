@@ -74,19 +74,26 @@ header img {
 
 /*Area que mostra o texto criptografado/descriptografado*/
 
-.saida-dados-campo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.saida-dados {
     background-color: #FFFFFF;
     width: 300px;
     height: 500px;
     margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#saida-dados-campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .campo-imagem {
     width: 250px;
+    /* margin: 0 25px; */
 }
 .campo-texto {
     font-family: 'Inter', sans-serif;

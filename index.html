@@ -26,14 +26,14 @@
                 </div>
 
                 <div class="entrada-dados-botoes">
-                    <input class="botao-criptografar" type="submit" value="Criptografar">
-                    <input class="botao-descriptografar" type="submit" value="Descriptografar">
+                    <button class="botao-criptografar" onclick="ocultarImagem()" type="submit">Criptografar</button>
+                    <button class="botao-descriptografar" type="submit">Descriptografar</button>
                 </div>
             </div>
         </section>
 
         <section class="saida-dados">
-            <div class="saida-dados-campo">
+            <div id="saida-dados-campo">
                 <img class="campo-imagem" src="assets/img/Resultado.png" alt="">
                 <div class="campo-texto">
                     <h1>Nenhuma mensagem encontrada</h1>
@@ -49,3 +49,9 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function ocultarImagem() {
+      document.getElementById("saida-dados-campo").style.display = "none";
+    }
+</script>

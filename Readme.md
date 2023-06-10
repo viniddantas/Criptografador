@@ -8,6 +8,6 @@
 <p>A letra "u" é convertida para "ufat"</p>
 
 
-<div>
-    <img src="[https://github.com/viniddantas/Challenge-Oracle-One/issues/1#issue-1751125857](https://github.com/viniddantas/Challenge-Oracle-One/assets/87505409/68d9738d-996e-453a-a107-abec03885ca4)">
+<div align="center">
+    <img src="https://github.com/viniddantas/Challenge-Oracle-One/assets/87505409/68d9738d-996e-453a-a107-abec03885ca4">
 </div>

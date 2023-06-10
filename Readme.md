@@ -9,5 +9,6 @@
 
 
 <div align="center">
-    <img src="https://github.com/viniddantas/Challenge-Oracle-One/assets/87505409/68d9738d-996e-453a-a107-abec03885ca4">
+    <h2>Visão geral da página<h2>
+    <img width="800" src="https://github.com/viniddantas/Challenge-Oracle-One/assets/87505409/68d9738d-996e-453a-a107-abec03885ca4">
 </div>

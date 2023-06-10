@@ -30,6 +30,7 @@ header img {
     font-size: 28px;
     color: #0A3871;
     padding: 15px;
+    resize: none;
 }
 
 .entrada-texto {

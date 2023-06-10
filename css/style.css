@@ -84,16 +84,27 @@ header img {
     align-items: center;
     flex-direction: column;
 }
-#saida-dados-campo {
+
+.saida-dados {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
+#saida-dados-resultado{
+    width: 270px;
+    height: 470px;
+    display: flex;
+    justify-self: flex-start;
+    word-break: break-word;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
 .campo-imagem {
     width: 250px;
-    /* margin: 0 25px; */
+    margin: 0 25px; 
 }
 .campo-texto {
     font-family: 'Inter', sans-serif;

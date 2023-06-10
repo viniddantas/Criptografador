@@ -19,28 +19,34 @@
 
     <main class="entrada-saida-dados">
         <div class="container">
-        <section class="entrada-dados">
-            <div class="container">
-                <div class="entrada-dados-campo">
-                    <textarea class="entrada-texto" cols="40" rows="10" id="texto" placeholder="Digite seu texto"></textarea>
-                </div>
+            <section class="entrada-dados">
+                <div class="container">
+                    <div class="entrada-dados-campo">
+                        <textarea class="entrada-texto" cols="40" rows="10" id="texto" placeholder="Digite seu texto"></textarea>
+                    </div>
 
-                <div class="entrada-dados-botoes">
-                    <button class="botao-criptografar" onclick="ocultarImagem()" type="submit">Criptografar</button>
-                    <button class="botao-descriptografar" type="submit">Descriptografar</button>
+                    <div class="entrada-dados-botoes">
+                        <button class="botao-criptografar" onclick="criptografar()" type="submit">Criptografar</button>
+                        <button class="botao-descriptografar" onclick="descriptografar()" type="submit">Descriptografar</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="saida-dados">
-            <div id="saida-dados-campo">
-                <img class="campo-imagem" src="assets/img/Resultado.png" alt="">
-                <div class="campo-texto">
-                    <h1>Nenhuma mensagem encontrada</h1>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <section class="saida-dados">
+ 
+                <div class="saida-dados-informacao">
+                    <img class="campo-imagem" src="assets/img/Resultado.png" alt="Menina com um lupa">
+                    <div class="campo-texto">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="saida-dados-texto">
+                    <p id="saida-dados-resultado" title="teste" cols="10" rows="20"></p>
+                </div>
+            </section>
+
+
         </div>
     </main>
 
@@ -51,7 +57,76 @@
 </html>
 
 <script>
+    document.getElementById("saida-dados-resultado").style.display = "none"; //esconde a area do texto resultante
     function ocultarImagem() {
-      document.getElementById("saida-dados-campo").style.display = "none";
+        document.querySelector("div.saida-dados-informacao").style.display = "none"; //esconde a imagem
+        document.getElementById("saida-dados-resultado").style.display = ""; //exibe a area do texto resultante
+        
+    }
+    function exibeImagem() {
+        document.querySelector("div.saida-dados-informacao").style.display = ""; //exibe a imagem
+        document.getElementById("saida-dados-resultado").style.display = "none"; //esconde a area do texto resultante
+    }
+
+    function recebeTexto () {
+        texto = document.querySelector("textarea.entrada-texto").value; //Captura o texto escrito no campo de input do HTML
+        return texto;
+    }
+
+    function criptografar() {
+        texto = recebeTexto();
+        if(texto.length != 0) {
+            ocultarImagem();
+        } else {
+            exibeImagem();
+        }
+        
+        
+        var textoCriptografado= "";
+        for (var i = 0; i < texto.length; i++) {
+            if (texto[i] == 'a') {
+                textoCriptografado += "ai";
+            } else if (texto[i] == 'e') {
+                textoCriptografado +="enter";
+            } else if (texto[i] == 'i') {
+                textoCriptografado += "imes";
+            } else if (texto[i] == 'o') {
+                textoCriptografado += "ober";
+            } else if (texto[i] == 'u') {
+                textoCriptografado += "ufat";
+            } else {
+                textoCriptografado += texto[i];
+            }
+        }
+        document.getElementById("saida-dados-resultado").innerText = textoCriptografado; //exibe o resultado
+    }
+
+    function descriptografar() {
+        texto = recebeTexto();
+        if(texto.length != 0) {
+            ocultarImagem();
+        } else {
+            exibeImagem();
+        }
+        
+        var textoDescriptografado = texto;
+        for (var i = 0; i < texto.length; i++) {
+            if (texto.includes("ai") == true) {
+                textoDescriptografado = textoDescriptografado.replace("ai", "a");
+            } 
+            if (texto.includes("enter") == true) {
+                textoDescriptografado = textoDescriptografado.replace("enter", "e");
+            } 
+            if (texto.includes("imes") == true) {
+                textoDescriptografado = textoDescriptografado.replace("imes", "i");
+            } 
+            if (texto.includes("ober") == true) {
+                textoDescriptografado = textoDescriptografado.replace("ober", "o");
+            } 
+            if (texto.includes("ufat") == true) {
+                textoDescriptografado = textoDescriptografado.replace("ufat", "u");
+            } 
+        }
+        document.getElementById("saida-dados-resultado").innerText = textoDescriptografado; //exibe o resultado
     }
 </script>

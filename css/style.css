@@ -49,7 +49,7 @@ header img {
     outline: none;
 }
 
-.entrada-dados-botoes {
+.entrada-dados-botoes{
     width: 700px;
     display: flex;
     justify-content: space-between;
@@ -101,9 +101,12 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
+.saida-dados-informacao {
+    padding-top: 20px;
+}
 
 .saida-dados-texto { 
     height: 500px;
@@ -142,6 +145,23 @@ header img {
     font-size: 14px;
     padding: 10px;
     line-height: 18px;
+}
+
+.saida-dados-botao {
+    padding: 10px 0;
+}
+
+.botao-copiar {
+    width: 250px;
+    padding: 20px 40px;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+.botao-copiar:hover {
+    background-color: #9fa6af;
 }
 
 /*Footer*/

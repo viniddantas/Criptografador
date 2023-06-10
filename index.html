@@ -31,9 +31,8 @@
                     </div>
                 </div>
             </section>
-
-            <section class="saida-dados">
  
+            <section class="saida-dados">
                 <div class="saida-dados-informacao">
                     <img class="campo-imagem" src="assets/img/Resultado.png" alt="Menina com um lupa">
                     <div class="campo-texto">
@@ -44,7 +43,12 @@
                 <div class="saida-dados-texto">
                     <textarea id="saida-dados-resultado" title="teste" cols="10" rows="20" readonly></textarea>
                 </div>
+                <div class="saida-dados-botao">
+                    <button class="botao-copiar" onclick="copiarTexto()" type="submit">Copiar</button> 
+                </div>
             </section>
+
+            
         </div>
     </main>
 
@@ -95,7 +99,6 @@
             exibeImagem();
         }
         
-        
         var textoCriptografado= "";
         for (var i = 0; i < texto.length; i++) {
             if (texto[i] == 'a') {
@@ -142,5 +145,11 @@
             } 
         }
         document.getElementById("saida-dados-resultado").innerText = textoDescriptografado; //exibe o resultado
+    }
+
+    function copiarTexto() {
+        let textoCopiado = document.querySelector("#saida-dados-resultado");
+        textoCopiado.select();
+        document.execCommand("copy");
     }
 </script>

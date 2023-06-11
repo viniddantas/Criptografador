@@ -35,7 +35,7 @@
             </section>
  
             <section class="saida-dados">
-                <div class="saida-dados-informacao">
+                <div class="saida-dados-informacao" >
                     <img class="campo-imagem" src="assets/img/Resultado.png" alt="Menina com um lupa">
                     <div class="campo-texto">
                         <h1>Nenhuma mensagem encontrada</h1>
@@ -77,15 +77,17 @@
 </html>
 
 <script>
-    document.getElementById("saida-dados-resultado").style.display = "none"; //esconde a area do texto resultante
+    exibeImagem();
     function ocultarImagem() {
         document.querySelector("div.saida-dados-informacao").style.display = "none"; //esconde a imagem
+        document.querySelector("button.botao-copiar").style.display = ""; //exibe o botao copiar
         document.getElementById("saida-dados-resultado").style.display = ""; //exibe a area do texto resultante
         
     }
     function exibeImagem() {
-        document.querySelector("div.saida-dados-informacao").style.display = ""; //exibe a imagem
         document.getElementById("saida-dados-resultado").style.display = "none"; //esconde a area do texto resultante
+        document.querySelector("div.saida-dados-informacao").style.display = ""; //exibe a imagem
+        document.querySelector("button.botao-copiar").style.display = "none"; //esconde o botao copiar        
     }
 
     function recebeTexto () {

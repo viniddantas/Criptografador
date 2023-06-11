@@ -105,7 +105,13 @@ header img {
 }
 
 .saida-dados-informacao {
-    padding-top: 20px;
+    height: 500px;
+    padding-top: 65px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .saida-dados-texto { 
@@ -127,7 +133,8 @@ header img {
 }
 
 .campo-imagem {
-    width: 250px;
+    
+    max-width: 250px;
     margin: 0 25px; 
 }
 .campo-texto {
